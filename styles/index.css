@@ -2,7 +2,8 @@
 
 #girl_blur_container {
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: -webkit-fill-available;
 }
 
 #girl_blur {
