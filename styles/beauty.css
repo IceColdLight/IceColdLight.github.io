@@ -1,0 +1,40 @@
+body {
+    padding-left: 10vw;
+    padding-right: 11.5vw;
+}
+
+/* Floating btn */
+
+#floating_btn {
+    position: fixed;
+    right: 60px;
+    bottom: 25px;
+    padding: 23px;
+    background: white;
+    border-radius: 37px;
+    /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.ph-list {
+    font-size: 140%;
+}
+
+/* Man */
+
+#man_container {
+    height: 283px; /* thats a nono */
+}
+
+.man {
+    position: absolute;
+    width: 375px;
+    height: 283px;
+    width: 100%;
+}
+
+#man_blur {
+    filter: blur(29px);
+    margin-top: 3vw;
+}

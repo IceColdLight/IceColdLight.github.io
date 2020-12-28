@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kira's Mind Palace</title>
+    <link href="styles/global.css" type="text/css" rel="stylesheet" />
+    <link href="styles/index.css" type="text/css" rel="stylesheet" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        document
+          .getElementById("button")
+          .addEventListener("click", function () {
+            document.location.href = "./pages/beauty.html";
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="images">
+      <div id="girl_blur_container">
+        <img id="girl_blur" src="imgs/girl bed.jpg" alt="Girl on bed" />
+      </div>
+      <div id="girl_container">
+        <img id="girl" src="imgs/girl bed.jpg" alt="Girl on bed" />
+        <div id="black_overlay"></div>
+        <!-- Content -->
+        <content id="content">
+          <p id="subheader">Kira's</p>
+          <p id="header">Mind<br />Palace</p>
+          <div id="button">
+            <i class="ph-arrow-right"></i>
+          </div>
+        </content>
+      </div>
+    </div>
+  </body>
+</html>
