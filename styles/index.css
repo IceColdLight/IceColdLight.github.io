@@ -82,6 +82,7 @@
     height: 53px;
     cursor: pointer;
     transform: scale(0.9);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .ph-arrow-right {

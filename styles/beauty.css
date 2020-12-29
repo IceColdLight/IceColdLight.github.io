@@ -9,11 +9,13 @@ body {
     position: fixed;
     right: 95px;
     bottom: 25px;
+    z-index: 100000;
 }
 
 .floating_btn_option {
     position: absolute;
     padding: 18px;
+    padding-bottom: 15px;
     margin-left: 8px;
     margin-bottom: 15px;
     background: rgb(241, 241, 241);
@@ -35,6 +37,7 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     cursor: pointer;
     z-index: 1000;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .ph-list {
@@ -55,9 +58,9 @@ body {
 .man_img_container { /* thats an even bigger nono */
     position: absolute;
     left: 0;
-    padding-left: 37px;
+    padding-left: 10vw;
     top: 38%;
-    width: 337px;
+    width: 90vw;
     height: 420px;
     overflow: hidden;
     display: flex;
