@@ -5,20 +5,45 @@ body {
 
 /* Floating btn */
 
-#floating_btn {
+#floating_btn_container {
     position: fixed;
-    right: 60px;
+    right: 95px;
     bottom: 25px;
+}
+
+.floating_btn_option {
+    position: absolute;
+    padding: 18px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+    background: rgb(241, 241, 241);
+    border-radius: 37px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    z-index: 999;
+
+    bottom: 0;
+    opacity: 0;
+}
+
+#floating_btn_trigger {
+    position: absolute;
+    bottom: 0;
     padding: 23px;
     background: white;
     border-radius: 37px;
-    /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    z-index: 1000;
 }
 
 .ph-list {
+    transition: all 0.2s;
     font-size: 140%;
+}
+
+.open_rotate {
+    transform: rotate(90deg);
 }
 
 /* Man */
@@ -27,11 +52,21 @@ body {
     height: 283px; /* thats a nono */
 }
 
-.man {
+.man_img_container { /* thats an even bigger nono */
     position: absolute;
-    width: 375px;
+    left: 0;
+    padding-left: 37px;
+    top: 38%;
+    width: 337px;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.man {
+    height: 100%;
     height: 283px;
-    width: 100%;
 }
 
 #man_blur {

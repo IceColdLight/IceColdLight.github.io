@@ -8,27 +8,42 @@
     <link href="../styles/global.css" type="text/css" rel="stylesheet" />
     <link href="../styles/beauty.css" type="text/css" rel="stylesheet" />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
     <script src="../js/beauty.js"></script>
   </head>
   <body>
-    <div id="floating_btn">
-      <i class="ph-list"></i>
+    <div id="floating_btn_container">
+      <div id="floating_btn_trigger">
+        <i class="ph-list"></i>
+      </div>
+      <div class="floating_btn_option">
+        <i class="ph-heart"></i>
+      </div>
+      <div class="floating_btn_option">
+        <i class="ph-house"></i>
+      </div>
     </div>
     <content>
       <h1>What is it,<br />that you call<br />beautiful?</h1>
       <h2 style="margin-bottom: 18vw">Can you see it? Feel it?</h2>
       <div id="man_container">
+        <div class="man_img_container">
         <img
           id="man_blur"
           class="man"
           src="../imgs/ma brother from another mother.jpg"
           alt="Man with clothes"
         />
+      </div>
+      <div class="man_img_container">
         <img
           class="man"
           src="../imgs/ma brother from another mother.jpg"
           alt="Man with clothes"
         />
+      </div>
       </div>
       <p style="margin-top: 17vw; margin-bottom: 15vw;">
         Because it can be a subjective ex-perience, it is often said that
